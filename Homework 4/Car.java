@@ -1,0 +1,39 @@
+public class Car {
+	String make;
+	String model;
+	
+	public Car() {
+		this.make = null;
+		this.model = null;
+	}
+	
+	public Car(String make,String model) {
+		this.make = make;
+		this.model = model;
+	}
+
+	public String getMake() {
+		return make;
+	}
+
+	public void setMake(String make) {
+		this.make = make;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+	
+	@Override
+	public String toString() {
+		return make + " " + model + "\n";
+	}
+	
+	public static void main(String[] args) {
+		Car mazda = new Car("Mazda","3");
+	}
+}
