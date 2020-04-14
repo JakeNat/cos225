@@ -27,7 +27,7 @@ public class OrderQueue<T> extends LinkedQueue<T> {
 		CustomerOrder customer = orders.getFront();
 		if (customer.quantity > 0) {
 			customer.shipProduct();
-			this.stock -= 1;
+			this.stock--;
 			if (customer.quantity == 0) {
 				orders.dequeue();
 				sizeOfQueue--;
